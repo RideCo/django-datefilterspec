@@ -6,7 +6,7 @@
 </style>
 
 <div class="grp-row">
-    <label>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</label>
+    <label>{% blocktrans with filter_title=title|title %} By {{ filter_title }} {% endblocktrans %}</label>
 
     {% with choices.0 as i %}
     <form method="GET" action="">
